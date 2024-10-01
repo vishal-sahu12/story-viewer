@@ -1,0 +1,128 @@
+/* Header Section */
+.header-section {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .blur-background {
+    /* filter: blur(3px); Blur the background */
+    pointer-events: visible; /* Disable interaction with blurred background */
+  }
+
+  .register-btn, .signin-btn {
+    height: 2.5rem;
+    border-radius: 20px;
+    width: 8rem;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff5656;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .signin-btn {
+    background-color: #4a90e2;
+  }
+  
+  /* Topics Section */
+  .topics-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Hide scrollbar for modern browsers */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  
+  .topics-section::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+  
+  .topic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+  }
+  
+  .topic-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .topic-title {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Stories Section */
+  .stories-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .no-stories {
+    color: #b0b0b0;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .add-story-btn,.bookmarks-btn{
+    background: #FF7373;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+  }
+
+
+
+  /* Stories Section */
+.stories-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards in one row */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+.stories-grid {
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in one row for tablets */
+}
+}
+
+@media (max-width: 768px) {
+.stories-grid {
+  grid-template-columns: repeat(2, 1fr); /* 2 cards in one row for smaller screens */
+}
+}
+
+@media (max-width: 480px) {
+.stories-grid {
+  grid-template-columns: 1fr; /* 1 card per row for mobile devices */
+}
+}
+
+  
+  /* .modal-overlay {
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(239, 45, 45, 0.923);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  } */

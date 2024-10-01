@@ -1,0 +1,59 @@
+.card {
+    width: 100%; /* Use 100% width for mobile */
+    max-width: 300px; /* Set a max-width for larger screens */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to bottom, #000000, #0c1617);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the card */
+}
+
+.card-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card-upper-shadow {
+    width: 100%;
+    position: absolute;
+    height: 80%;
+    color: white;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(28, 1, 1, 0));
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: rgba(0, 0, 0, 0.985);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.heading {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Media Queries for responsiveness
+@media (min-width: 600px) {
+    .card {
+        width: 45%; Adjust width for tablets 
+    }
+}
+
+ @media (min-width: 900px) {
+    .card {
+        width: 30%;  Adjust width for desktops 
+    }
+} */
