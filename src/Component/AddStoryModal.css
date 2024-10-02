@@ -1,0 +1,121 @@
+.modal {
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .tab-button {
+    padding: 10px 15px;
+    background: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .tab-button.active {
+    background: #d0eaff;
+    color: #007bff;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 2px 4px;
+  }
+  
+  .add-slide-btn {
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    margin-left: auto;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .modal-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .prev-btn,
+  .next-btn,
+  .post-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    background-color: #f0ad4e;
+  }
+  
+  .next-btn {
+    background-color: #5bc0de;
+  }
+  
+  .post-btn {
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

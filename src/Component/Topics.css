@@ -8,7 +8,7 @@
     overflow-x: auto; /* Allows horizontal scrolling */
     gap: 1rem; /* Adds space between topic cards */
     scroll-snap-type: x mandatory; /* Ensures the items snap while scrolling */
-    scrollbar-width: none; /* Hide scrollbar for modern browsers */
+    scrollbar-width: auto; /* Hide scrollbar for modern browsers */
     -ms-overflow-style: none;  /* IE and Edge */
   }
   
@@ -22,7 +22,8 @@
     height: 10rem; /* Responsive height */
     background-size: cover;
     background-position: center;
-    border-radius: 0.3rem; /* Responsive border-radius */
+    border: 0.3rem solid #00ACD2;
+    border-radius: 1rem; /* Responsive border-radius */
     display: flex;
     align-items: center;
     justify-content: center;

@@ -11,7 +11,8 @@
 
 .card-image {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+     /* Maintain aspect ratio */
 }
 
 .card-upper-shadow {

@@ -1,0 +1,136 @@
+.story-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 9999;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+  }
+
+.story-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+  }
+
+.close-button,
+.share-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    display: flex;
+    width: 60%;
+    height: 5px;
+    background: gray;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-segment {
+    flex-grow: 1;
+    margin: 0 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.progress-segment.filled {
+    background: white;
+}
+
+.story-carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.story-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.story-content {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.story-content img {
+    max-width: 90%;
+    max-height: 60vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.story-text {
+    text-align: center;
+}
+
+.story-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.bookmark-button,
+.like-button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.story-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.prev-button,
+.next-button {
+    background: transparent;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev-button:disabled,
+.next-button:disabled {
+    color: gray;
+}
